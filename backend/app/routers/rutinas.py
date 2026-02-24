@@ -77,7 +77,6 @@ def _existe_nombre_rutina(session: Session, nombre: str, excluir_id: int | None 
 @router.post("", response_model=RutinaReadConEjercicios, status_code=201)
 def crear_rutina(body: RutinaCreate, session: Session = Depends(get_session)):
     """Crea una nueva rutina y opcionalmente sus ejercicios."""
-    # .NET: Validación de negocio
     if _existe_nombre_rutina(session, body.nombre):
         raise HTTPException(
             status_code=400,
