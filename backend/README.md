@@ -5,7 +5,7 @@ API REST desarrollada con FastAPI para crear, listar, buscar, modificar y elimin
 ## Requisitos previos
 
 - **Python 3.10 o superior**
-- **PostgreSQL** instalado y en ejecución
+- **PostgreSQL**
 - Opcional: entorno virtual (recomendado)
 
 ## Instalación
@@ -29,9 +29,9 @@ API REST desarrollada con FastAPI para crear, listar, buscar, modificar y elimin
 
 ### String de conexión
 
-La aplicación se conecta a PostgreSQL mediante la variable de entorno `DATABASE_URL`.
+La aplicación se conecta a la base de datos mediante la variable de entorno `DATABASE_URL`.
 
-**Formato del string de conexión:**
+**Formato del string de conexión (PostgreSQL):**
 
 ```
 postgresql://USUARIO:CONTRASEÑA@HOST:PUERTO/NOMBRE_BD
